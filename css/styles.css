@@ -1,0 +1,66 @@
+/* mobile first */
+body {
+  font-size: 1em;
+  background: #DDD;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-left:5%;
+  margin-top: 1%;
+}
+
+fieldset > .references  {
+  border: 1px solid black;
+  padding: 2% 0;
+  margin: 2% 0;
+}
+
+.references > label {
+  margin-top: 1%;
+}
+
+label option {
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+}
+
+#buttons {
+  margin: 2% 0%;
+  text-align: center;
+  }
+
+/* all others */
+
+@media screen and (min-width: 500px)
+{
+  fieldset{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:750px)
+{
+  body{
+    font-size: 1em;
+  }
+
+   input{
+    display:inline-block;
+   }
+   label{
+    display:inline-block;
+     margin-bottom:1%;
+  }
+}
+  

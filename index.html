@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Job application form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Marc Preston" />
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/styles.css"    rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h1>Job Application</h1>
+    </header>
+    <main>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Personal info</legend>
+          <div id="name">
+            <label for="firstName">First name:
+              <input type="text" name="firstName" id="firstName" placeholder="John" required>
+            </label>
+            <label for="lastName">Last name:
+              <input type="text" name="lastName" id="lastName" placeholder="Smith" required>
+            </label>
+          </div>
+          <div id="personalInfo">
+            <label for="social">Social security number:
+              <input type="text" name="social" id="social" size="11" placeholder="000-00-0000">
+            </label>
+          <!-- change to have a select for month day and year-->
+            <label for="Dob">Date of birth:
+              <input type="date" name="Dob" id="Dob" required>
+            </label>
+          </div>
+          <div id="Youraddress">
+            <label for="address">Street address:
+              <input type="text" name="address" id="address" placeholder=" 123 ABC Lane" required>
+            </label>
+            <label for="state">State:
+              <select name="state" id="state" required>
+                <option value="">None</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </label>
+            <label for="zipcode">Zip code:
+              <input type="text" name="zipcode" id="zipcode" size="5" placeholder="00000" required>
+            </label>
+          </div>
+          <div id="contactInfo">
+            <label for="email">Email:
+              <input type="email" name="email" id="email" placeholder="JohnSmith@Smith.com">
+            </label>
+            <label for="phone">Phone number:
+              <input type="text" name="phone" id="phone" size="15" placeholder="000-000-0000">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Education</legend>
+          <label for="schoolName">School name:
+            <input type="text" name="schoolName" id="schoolName" placeholder="School Name">
+          </label>
+          <label for="degree">Highest degree earned:
+            <select name="degree" id="degree">
+              <option value="High School Diploma">High School Diploma/Ged</option>
+              <option value="Associate Degree">Associates Degree</option>
+              <option value="Bachelors Degree">Bachelors Degree</option><!-- spell check -->
+              <option value="Master's Degree">Master's Degree</option>
+              <option value="Doctorate">Doctorate</option>
+            </select>
+          </label>
+          <label for="graduateYear">Year graduated:
+            <input type="text" name="graduateYear" id="graduateYear" size="4" placeholder="####">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Work history</legend>
+          <label for="companyName">Company name:
+            <input type="text" name="companyName" id="companyName" placeholder="Company Name">
+          </label>
+          <label for="companyAddress">Company address:
+            <input type="text" name="companyAddress" id="companyAddress" placeholder="123 ABC Lane">
+          </label>
+          <label for="jobState">State:
+            <select name="jobState" id="jobState">
+              <option value="">None</option>
+              <option value="AL">AL</option>
+              <option value="AK">AK</option>
+              <option value="AZ">AZ</option>
+              <option value="AR">AR</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DE">DE</option>
+              <option value="DC">DC</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="HI">HI</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="IA">IA</option>
+              <option value="KS">KS</option>
+              <option value="KY">KY</option>
+              <option value="LA">LA</option>
+              <option value="ME">ME</option>
+              <option value="MD">MD</option>
+              <option value="MA">MA</option>
+              <option value="MI">MI</option>
+              <option value="MN">MN</option>
+              <option value="MS">MS</option>
+              <option value="MO">MO</option>
+              <option value="MT">MT</option>
+              <option value="NE">NE</option>
+              <option value="NV">NV</option>
+              <option value="NH">NH</option>
+              <option value="NJ">NJ</option>
+              <option value="NM">NM</option>
+              <option value="NY">NY</option>
+              <option value="NC">NC</option>
+              <option value="ND">ND</option>
+              <option value="OH">OH</option>
+              <option value="OK">OK</option>
+              <option value="OR">OR</option>
+              <option value="PA">PA</option>
+              <option value="RI">RI</option>
+              <option value="SC">SC</option>
+              <option value="SD">SD</option>
+              <option value="TN">TN</option>
+              <option value="TX">TX</option>
+              <option value="UT">UT</option>
+              <option value="VT">VT</option>
+              <option value="VA">VA</option>
+              <option value="WA">WA</option>
+              <option value="WV">WV</option>
+              <option value="WI">WI</option>
+              <option value="WY">WY</option>
+            </select>
+          </label>
+          <label for="jobZipcode">Zip code:
+            <input type="text" name="jobZipcode" id="jobZipcode" size="5" placeholder="00000">
+          </label>
+          <label for="jobTitle">Job title:
+            <input type="text" name="jobTitle" id="jobTitle" placeholder="Job Title">
+          </label>
+          <label for="hireDate">Date of hire:
+            <input type="date" name="hireDate" id="hireDate">
+          </label>
+          <label for="endDate">To:
+            <input type="date" name="endDate" id="endDate">
+          </label>
+          <label for="workPhone">Phone number:
+            <input type="text" name="workPhone" size="15" id="workPhone" placeholder="000-000-0000">
+          </label>
+          <label for="supervisorName">Supervisor's name:
+            <input type="text" name="supervisorName" placeholder="Full Name" id="supervisorName">
+          </label>
+          <label for="supervisorNumber">Supervisor's phone number:
+            <input type="text" name="supervisorNumber" id="supervisorNumber" size="15" placeholder="000-000-0000">
+          </label>
+          <label for="okaytoCallSup">
+            <input type="checkbox" value="yes" name="okayToCallSup" id="okaytoCallSup">
+      Can we contact this supervisor</label>
+        </fieldset>
+        <fieldset>
+          <legend>References</legend>
+        <!--change to have seperate spots for first and last name -->
+
+          <div class="references">
+            <label for="ref1Name">Name:
+              <input type="text" name="ref1Name" id="ref1Name" placeholder="Jane Smith">
+            </label>
+            <label for="ref1Address">Address:
+              <input type="text" name="ref1Address" id="ref1Address" placeholder="123 ABC Lane">
+            </label>
+            <label for="ref1State">State:
+              <select name="ref1State" id="ref1State">
+                <option value="">None</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </label>
+            <label for="ref1Zipcode">Zip code:
+              <input type="text" name="ref1Zipcode" id="ref1Zipcode" size="5" placeholder="00000">
+            </label>
+            <label for="ref1phone">Phone:
+              <input type="text" name="ref1phone" id="ref1phone" size="15" placeholder="000-000-0000">
+            </label>
+            <label for="ref1Email">Email:
+              <input type="email" name="ref1Email" id="ref1Email" placeholder="JaneSmith@Smith.com">
+            </label>
+          </div>
+          <div class="references">
+            <label for="ref2Name">Name:
+              <input type="text" name="ref2Name" id="ref2Name" placeholder="John Smith">
+            </label>
+            <label for="ref2Address">Address:
+              <input type="text" name="ref2Address" id="ref2Address" placeholder="123 ABC Lane">
+            </label>
+            <label for="ref2State">State:
+              <select name="ref2State" id="ref2State">
+                <option value="">None</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </label>
+            <label for="ref2Zipcode">Zip code:
+              <input type="text" name="ref2Zipcode" id="ref2Zipcode" size="5" placeholder="00000">
+            </label>
+            <label for="ref2phone">Phone:
+              <input type="text" name="ref2phone" id="ref2phone" size="15" placeholder="000-000-0000">
+            </label>
+            <label for="ref2Email">Email:
+              <input type="email" name="ref2Email" id="ref2Email" placeholder="JohnSmith@Smith.com">
+            </label>
+          </div>
+          <div class="references">
+            <label for="ref3Name">Name:
+              <input type="text" name="ref3Name" id="ref3Name" placeholder="Jane Smith">
+            </label>
+            <label for="ref3Address">Address:
+              <input type="text" name="ref3Address" id="ref3Address" placeholder="123 ABC Lane">
+            </label>
+            <label for="ref3State">State:
+              <select name="ref3State" id="ref3State">
+                <option value="">None</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </label>
+            <label for="ref3Zipcode">Zip code:
+              <input type="text" name="ref3Zipcode" id="ref3Zipcode" size="5" placeholder="00000">
+            </label>
+            <label for="ref3phone">Phone:
+              <input type="text" name="ref3phone" id="ref3phone" size="15" placeholder="000-000-0000">
+            </label>
+            <label for="ref3Email">Email:
+              <input type="email" name="ref3Email" id="ref3Email" placeholder="JaneSmith@Smith.com">
+            </label>
+          </div>
+        </fieldset>
+        <div id="buttons">
+          <button type="submit" name="submit">Submit</button>
+          <button type="reset" name="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
